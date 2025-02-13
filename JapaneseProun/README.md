@@ -1,0 +1,1 @@
+The Chrome Extension for Janpanese Pronounce and translate 
