@@ -3,7 +3,7 @@
   "name": "Save URLs to Telegram",
   "version": "1.0",
   "description": "Save the current URL to a telegram channels.",
-  "permissions": ["activeTab", "scripting", "tts", "contextMenus"],
+  "permissions": ["activeTab", "scripting", "tts", "contextMenus", "storage"],
   "host_permissions": ["https://api.telegram.org/*"], // 允许访问 Jisho API
   "background": {
     "service_worker": "background.js"
