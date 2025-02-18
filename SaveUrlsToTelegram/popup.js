@@ -48,7 +48,8 @@ document.getElementById('save-url').addEventListener('click', () => {
 });
 
 function sendUrl(botToken, channelId) {
-
+  alert(botToken);
+  alert(channelId);
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     const url = tabs[0].url;
     const title = tabs[0].title;
@@ -60,7 +61,7 @@ function sendUrl(botToken, channelId) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        chat_id: channelId,
+        chat_id: "@"+ channelId,
         text: message,
         parse_mode: 'Markdown',
       }),
